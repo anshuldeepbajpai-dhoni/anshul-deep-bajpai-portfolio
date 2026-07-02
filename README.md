@@ -4,11 +4,7 @@ A modern, responsive personal portfolio website showcasing my journey as an AI &
 
 ## 🌐 Live Demo
 
-Add your Vercel deployment link here:
-
-```text
-https://your-portfolio.vercel.app
-```
+https://anshul-deep-bajpai-portfolio07.netlify.app/
 
 ---
 
