@@ -3,7 +3,9 @@
 A modern, responsive personal portfolio website showcasing my journey as an AI & Machine Learning undergraduate, featuring projects, internships, technical skills, and professional experience in AI, data analytics, and fintech.
 
 ## 🌐 Live Demo
-
+On Vercel:-
+https://anshul-deep-bajpai-portfolio.vercel.app/
+On Netlify 
 https://anshul-deep-bajpai-portfolio07.netlify.app/
 
 ---
