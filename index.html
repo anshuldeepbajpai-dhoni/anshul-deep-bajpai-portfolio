@@ -265,6 +265,44 @@
     border:1px solid var(--border); color:var(--text-dim);
   }
 
+  /* Resume Section */
+
+.resume-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.resume-content .contact-title{
+    max-width:700px;
+    margin:0 auto 24px;
+}
+
+.resume-content .lead{
+    max-width:650px;
+    margin:0 auto 40px;
+    color:var(--text-dim);
+    line-height:1.8;
+}
+
+.resume-content .btn{
+    margin:0 auto;
+}
+
+@media (max-width:768px){
+
+    .resume-content .contact-title{
+        font-size:clamp(40px,10vw,64px);
+    }
+
+    .resume-content .lead{
+        font-size:15px;
+        padding:0 10px;
+    }
+
+}
+
   /* ---------- Skills ---------- */
   .skills-primary{
     display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
@@ -330,6 +368,46 @@
     border:1px solid var(--border-soft); padding:5px 10px; border-radius:100px;
   }
 
+  /* Contact Content */
+
+.contact-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.contact-content .contact-title{
+    max-width:800px;
+    margin:0 auto 24px;
+}
+
+.contact-content .lead{
+    max-width:600px;
+    margin:0 auto 40px;
+}
+
+.contact-content .contact-links{
+    justify-content:center;
+}
+
+.contact-grid{
+    margin-top:70px;
+}
+
+@media (max-width:768px){
+
+    .contact-content .contact-title{
+        font-size:clamp(40px,10vw,64px);
+    }
+
+    .contact-content .lead{
+        font-size:15px;
+        padding:0 10px;
+    }
+
+}
+
   /* ---------- Education / Timeline ---------- */
   .edu-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:60px; }
   @media (max-width:860px){ .edu-grid{ grid-template-columns:1fr; gap:44px; } }
@@ -382,6 +460,15 @@
     display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;
     font-family:var(--mono); font-size:12px; color:var(--text-faint);
   }
+
+  /* Fix Contact heading alignment */
+
+.contact-eyebrow{
+    width:100%;
+    justify-content:flex-start !important;
+    text-align:left;
+}
+
 </style>
 </head>
 <body>
@@ -702,34 +789,34 @@
 <!-- Resume -->
 <section id="resume" class="resume-section" style="background:var(--bg);">
 
-    <div class="wrap"
-         style="
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            text-align:center;
-         ">
+    <div class="wrap">
 
+        <!-- Left aligned Resume heading -->
         <div class="eyebrow">
             Resume
         </div>
 
-        <h2 class="contact-title reveal">
-            Download my latest
-            <span class="accent-text">resume.</span>
-        </h2>
+        <!-- Centered content -->
+        <div class="resume-content">
 
-        <p class="lead reveal">
-            A detailed overview of my projects, internships,
-            technical skills, certifications, and academic journey.
-        </p>
+            <h2 class="contact-title reveal">
+                Download my latest
+                <span class="accent-text">resume.</span>
+            </h2>
 
-        <a
-            href="resume.pdf"
-            download
-            class="btn btn-primary reveal">
-            Download Resume
-        </a>
+            <p class="lead reveal">
+                A detailed overview of my projects, internships,
+                technical skills, certifications, and academic journey.
+            </p>
+
+            <a
+                href="Resume.pdf"
+                download
+                class="btn btn-primary reveal">
+                Download Resume
+            </a>
+
+        </div>
 
     </div>
 
@@ -737,33 +824,92 @@
 
 <!-- CONTACT -->
 <section id="contact" class="contact-section">
-  <div class="wrap">
-    <div class="eyebrow" style="justify-content:center;">Contact</div>
-    <h2 class="contact-title reveal">Let's build something <span class="accent-text">intelligent</span>, together.</h2>
-    <p class="lead reveal">Open to AI engineering roles, ML internships, and collaborative projects. Reach out — I usually reply within a day.</p>
 
-    <div class="contact-links reveal">
-      <a href="mailto:anshuldeepbajpai@hotmail.com" class="btn btn-primary">Send an Email</a>
-      <a href="https://www.linkedin.com/in/anshul-deep-bajpai-441b1b37b" target="_blank" rel="noopener" class="btn btn-ghost">Connect on LinkedIn</a>
-      <a href="Resume.pdf" download class="btn btn-ghost">Download Resume</a>
-      <a href="https://github.com/anshuldeepbajpai-dhoni" target="_blank" rel="noopener" class="btn btn-ghost">GitHub Profile</a>
+    <div class="wrap">
+
+        <!-- Left aligned heading -->
+        <div class="eyebrow contact-eyebrow">
+            Contact
+        </div>
+
+        <!-- Centered content -->
+        <div class="contact-content">
+
+            <h2 class="contact-title reveal">
+                Let's build something
+                <span class="accent-text">intelligent</span>, together.
+            </h2>
+
+            <p class="lead reveal">
+                Open to AI engineering roles, ML internships, and collaborative
+                projects. Reach out — I usually reply within a day.
+            </p>
+
+            <div class="contact-links reveal">
+
+                <a href="mailto:anshuldeepbajpai@hotmail.com"
+                   class="btn btn-primary">
+                   Send an Email
+                </a>
+
+                <a href="https://www.linkedin.com/in/anshul-deep-bajpai-441b1b37b"
+                   target="_blank"
+                   rel="noopener"
+                   class="btn btn-ghost">
+                   Connect on LinkedIn
+                </a>
+
+                <a href="Resume.pdf"
+                   download
+                   class="btn btn-ghost">
+                   Download Resume
+                </a>
+
+                <a href="https://github.com/anshuldeepbajpai-dhoni"
+                   target="_blank"
+                   rel="noopener"
+                   class="btn btn-ghost">
+                   GitHub Profile
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="contact-grid reveal">
+
+            <div class="contact-cell">
+                <span class="c-label">Email</span>
+                <span class="c-value">
+                    anshuldeepbajpai@gmail.com
+                </span>
+            </div>
+
+            <div class="contact-cell">
+                <span class="c-label">Location</span>
+                <span class="c-value">
+                    Unnao, Uttar Pradesh, India
+                </span>
+            </div>
+
+            <div class="contact-cell">
+                <span class="c-label">LinkedIn</span>
+                <span class="c-value">
+                    /in/anshul-deep-bajpai
+                </span>
+            </div>
+
+            <div class="contact-cell">
+                <span class="c-label">GitHub</span>
+                <span class="c-value">
+                    github.com/anshuldeepbajpai-dhoni
+                </span>
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="contact-grid reveal">
-      <div class="contact-cell">
-        <span class="c-label">Email</span>
-        <span class="c-value">anshuldeepbajpai@gmail.com</span>
-      </div>
-      <div class="contact-cell">
-        <span class="c-label">Location</span>
-        <span class="c-value">Unnao, Uttar Pradesh, India</span>
-      </div>
-      <div class="contact-cell">
-        <span class="c-label">LinkedIn</span>
-        <span class="c-value">/in/anshul-deep-bajpai</span>
-      </div>
-    </div>
-  </div>
 </section>
 
 <footer class="wrap">
