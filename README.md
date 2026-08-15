@@ -66,9 +66,13 @@ The portfolio showcases my skills, experience, projects, certifications, educati
 ```text
 Anshul-Deep-Bajpai-Portfolio/
 │
+├── assets
+│   ├── Resume.pdf
+│   └── profile.jpg
 ├── index.html
 ├── README.md
-└── Anshul_Deep_Bajpai_Resume.pdf
+├── style.css
+└── script.js
 ```
 
 ### `index.html`
@@ -84,9 +88,9 @@ Contains the complete portfolio:
 * Navigation
 * Portfolio content
 
-### `Anshul_Deep_Bajpai_Resume.pdf`
+### `Resume.pdf`
 
-Downloadable résumé linked from the portfolio's Hero section and Footer.
+Downloadable resume linked from the portfolio's Hero section and Footer.
 
 ### `README.md`
 
@@ -142,6 +146,8 @@ Simply double-click:
 
 ```text
 index.html
+style.css
+script.js
 ```
 
 The portfolio will open in your default browser.
@@ -173,17 +179,22 @@ Make sure the résumé PDF is located in the same directory as `index.html`:
 ```text
 Anshul-Deep-Bajpai-Portfolio/
 │
+├── assets
+│   ├── Resume.pdf
+│   └── profile.jpg
 ├── index.html
-└── Anshul_Deep_Bajpai_Resume.pdf
+├── README.md
+├── style.css
+└── script.js
 ```
 
 The résumé link uses a relative path:
 
 ```html
-href="Anshul_Deep_Bajpai_Resume.pdf"
+href="assets/Resume.pdf"
 ```
 
-If the résumé is moved to another location, update the corresponding links in `index.html`.
+If the resume is moved to another location, update the corresponding links in `index.html`.
 
 ## 🌍 Deployment
 
