@@ -1,10 +1,3 @@
-/* ==========================================================
-   Portfolio | claymorphism version
-   Same class names as your old CSS, so your HTML keeps working.
-   No purple: green accent + blue, butter and coral helpers.
-   Includes light and dark theme (html[data-theme="dark"]).
-   ========================================================== */
-
 :root{
   --bg:#dcebf1;
   --surface:#e8f2f7;
